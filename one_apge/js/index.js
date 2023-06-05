@@ -14,14 +14,14 @@ window.onscroll = function() {
 }
 
 
-let menu = document.getElementById('header');
+let header = document.getElementById('header');
 let nav = document.getElementById('nav');
-let body = document.getElementById('container_all')
+let container__all = document.getElementById('container__all')
 
 function mostrar_menu() {
-    menu.classList.toggle('move_content');
-    nav.classList.toggle('move_nav');
-    body.classList.toggle('move_body');
+    header.classList.toggle('move__header')
+    nav.classList.toggle('move__nav');
+    container__all.classList.toggle('move__all');
 }
 
 document.getElementById('btn__menu').addEventListener('click', mostrar_menu);
@@ -29,8 +29,8 @@ document.getElementById('btn__menu').addEventListener('click', mostrar_menu);
 
 window.addEventListener('resize', function() {
     if (window.innerWidth > 760) {
-        menu.classList.remove('move_content');
-        nav.classList.remove('move_nav');
-        body.classList.remove('move_body');
+        header.classList.remove('move__header');
+        nav.classList.remove('move__nav');
+        container__all.classList.remove('move__all');
     }
 })

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;800;900&family=Poppins:wght@900&display=swap');
 
 
 * {
@@ -27,4 +27,15 @@ button {
 
 body {
     font-family: 'Nunito', sans-serif;
+}
+
+.container__all {
+    position: relative;
+    right: 0;
+    transition: right 300ms;
+    background-color: #FAFAFC;
+}
+
+.move__all {
+    right: 180px;
 }

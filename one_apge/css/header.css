@@ -6,15 +6,15 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
     transition: right 300ms;
 }
 
-.move_content {
+.move__header {
     right: 180px;
 }
 
-.container__header {
+.header__container {
     max-width: 1200px;
     margin: auto;
     height: 100%;
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.logo--header {
+.header__logo {
     width: 150px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .nav__link {
-    color: #373737;
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 600;
 }
@@ -66,7 +66,7 @@
 }
 
 .btn__menu:hover {
-    background: #F5F5F5;
+    background: #F5F5F550;
 }
 
 
@@ -96,7 +96,7 @@
         transition: right 300ms;
     }
 
-    .move_nav {
+    .move__nav {
         right: 0;
     }
 
