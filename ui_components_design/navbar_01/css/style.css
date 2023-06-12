@@ -21,7 +21,8 @@ li {
 /* CUSTOM PROPERTIES
 -------------------- */
 :root {
-    --color-primary: ;
+    --color-primary  : hsl(243, 75%, 59%);
+    --color-bg       : hsl(210, 56%, 93%);
 }
 
 
