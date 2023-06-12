@@ -1,0 +1,38 @@
+/* FUENTE | MONTSERRAT
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&display=swap');
+
+/* RESET
+--------- */
+* {
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    font            : inherit;
+    letter-spacing  : inherit;
+    line-height     : inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* CUSTOM PROPERTIES
+-------------------- */
+:root {
+    --color-primary: ;
+}
+
+
+
+.container {
+    max-width  : 1200px;
+    width      : 95%;
+    margin     : auto;
+}
+
+.container-fluid {
+    width    : 100%;
+    padding  : 0;
+}
