@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title Document</title>
+
+    <meta name="title" content="Title ...">
+    <meta name="description" content="Descripcion ...">
+
+    <!-- =============================== FAVICON ===================================== -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+
+    <!-- =============================== LINKS CSS ===================================== -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+    <!-- =============================== SCRIPTS ======================================= -->
+    <script src="./js/script.js" type="module" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header container-fluid">
+        <nav class="nav container" id="nav">
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" alt="" class="logo__img">
+            </a>
+            <a href="#" class="nav__item" hidden>
+                Docs
+            </a>
+            <a href="#" class="nav__item" hidden>
+                Blog
+            </a>
+            <div class="nav__item nav__item--dropdown">
+                <button class="nav__item--button">
+                    More
+                    <svg class="nav__item--button-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="nx-h-[18px] nx-min-w-[18px] nx-rounded-sm nx-p-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
+                            class="nx-origin-center nx-transition-transform nx-rotate-90"></path>
+                    </svg>
+                </button>
+
+                <div class="nav__dropdown">
+                    <a class="nav__item" href="#">Readme</a>
+                    <a class="nav__item" href="#">Sponsors</a>
+                    <a class="nav__item" href="#">Live demo</a>
+                    <a class="nav__item" href="#">Build your own</a>
+                </div>
+
+            </div>
+            <div class="nav__input" style="display: none;">
+                <input type="text" class="input">
+                <kbd class="command-input">CTRL K</kbd>
+            </div>
+            <a href="#" class="nav__item">
+                <img src="./images/github.svg" alt="" class="logo--git">
+            </a>
+            <a href="#" class="nav__item">
+                <img src="./images/discord.svg" alt="" class="logo--discord">
+            </a>
+            <a href="#" class="nav__item">
+                <img src="./images/twitter.svg" alt="" class="logo--twitter">
+            </a>
+            <input type="checkbox" name="check-icon" id="check-icon" class="check-icon" hidden>
+            <label for="check-icon" class="icon-menu">
+                <div class="bar bar--1"></div>
+                <div class="bar bar--2"></div>
+                <div class="bar bar--3"></div>
+            </label>
+        </nav>
+    </header>
+
+</body>
+
+</html>

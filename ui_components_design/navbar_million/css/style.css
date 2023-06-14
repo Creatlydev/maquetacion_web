@@ -1,0 +1,65 @@
+/* FUENTE | MONTSERRAT
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+/* RESET
+--------- */
+* {
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    font            : inherit;
+    letter-spacing  : inherit;
+    line-height     : inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration  : none;
+    color            : inherit;
+    display          : inline-block;
+}
+
+img {
+    max-width   : 100%;
+    object-fit  : cover;
+    display     : block;
+}
+
+button,
+input {
+    box-sizing        : border-box;
+    background-color  : transparent;
+    border            : none;
+}
+
+[hidden] {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* CUSTOM PROPERTIES
+-------------------- */
+:root {
+    --color-primary  : hsl(243, 75%, 59%);
+    --color-bg       : hsl(210, 56%, 93%);
+}
+
+
+
+.container {
+    max-width  : 1140px;
+    width      : 90%;
+    margin     : auto;
+}
+
+.container-fluid {
+    width    : 100%;
+    padding  : 0;
+}
