@@ -1,12 +1,49 @@
 export const observer = (element) => {
   function handleResize() {
     const currentWidth = element.offsetWidth;
+    let navbar = document.querySelector(".nav");
+    let navbar_content = document.querySelector(".nav__content");
+    let icon_menu = document.querySelector(".icon-menu");
     if (currentWidth < 960) {
-      document.getElementById("nav").style.display = "none";
-      document.querySelector(".icon").style.display = "block";
+      icon_menu.style.display = "block";
+
+      navbar.style.cssText = `
+      width             : 100%;
+      max-width         : 250px;
+      position          : absolute;
+      z-index           : 1;
+      top               : 0;
+      right             : 0;
+      box-shadow        : 0px 25px 80px rgba(0, 0, 0, 0.15);
+      background-color  : var(--color-bg);
+      border-radius     : .25rem;
+      min-height        : 90vh;
+      transform         : translateX(102%);
+      transition        : transform 200ms;
+      `;
+
+      navbar_content.style.cssText = `
+      align-items     : flex-start;
+      flex-direction  : column;
+      padding         : 1.5rem;
+      `;
     } else {
-      document.getElementById("nav").style.display = "block";
-      document.querySelector(".icon").style.display = "none";
+      icon_menu.style.display = "none";
+      navbar.style.cssText = `
+        width             : initial;
+        max-width         : initial;
+        position          : static;
+        min-height        : auto;
+        transform         : unset;
+        background-color  : transparent;
+        box-shadow        : unset;
+      `;
+
+      navbar_content.style.cssText = `
+        align-items     : center;
+        flex-direction  : row;
+        padding         : 0;
+      `;
     }
   }
 
