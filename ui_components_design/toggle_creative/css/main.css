@@ -1,0 +1,90 @@
+/* FUENTE | MONTSERRAT
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&display=swap');
+
+/* RESET
+--------- */
+* {
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    font            : inherit;
+    letter-spacing  : inherit;
+    line-height     : inherit;
+}
+
+/* CUSTOM PROPERTIES
+-------------------- */
+:root {
+    --color-primary  : hsl(243, 75%, 59%);
+    --color-bg       : hsl(210, 56%, 93%);
+}
+
+body {
+    font-family       : Montserrat, sans-serif;
+    letter-spacing    : 1.2px;
+    background-color  : var(--color-bg);
+    min-height        : 100vh;
+    display           : flex;
+}
+
+.container {
+    margin      : auto;
+    text-align  : center;
+    color        : hsl(119, 84%, 10%);
+}
+
+.slogan {
+    display        : block;
+    margin-bottom  : 1rem;
+    font-weight    : 800;
+    font-size      : 1.5rem;
+}
+
+.css {
+    color: hsl(214, 97%, 59%);
+}
+
+.toggle {
+    display      : flex;
+    align-items  : center;
+    gap          : .5rem;
+    font-weight  : 900;
+    font-size    : 6rem;
+}
+
+.toggle__switch {
+    --bg-toggle          : hsl(0, 0%, 100%);
+    --bg-circle          : hsl(119, 84%, 10%);
+    --w-toggle-switch    : 230px;
+    --w-h-toggle-circle  : 60px;
+    --pd-toggle-switch   : .5rem;
+    height               : 80px;
+    width                : var(--w-toggle-switch);
+    background-color     : var(--bg-toggle);
+    border-radius        : 4rem;
+    display              : flex;
+    align-items          : center;
+    padding              : 0 var(--pd-toggle-switch);
+    cursor               : pointer;
+    transition           : background-color 500ms;
+}
+
+.toggle__circle {
+    width             : var(--w-h-toggle-circle);
+    height            : var(--w-h-toggle-circle);
+    background-color  : var(--bg-circle);
+    border-radius     : 50%;
+    transition        : margin 400ms ease-in-out, background-color 1000ms;
+}
+
+
+#checkbox:checked + .toggle .toggle__circle {
+    margin-left: calc(var(--w-toggle-switch) - (var(--pd-toggle-switch) * 2) - var(--w-h-toggle-circle));
+}
+
+#checkbox:checked + .toggle > .toggle__switch {
+    --bg-toggle  : hsl(120, 80%, 50%);
+    --bg-circle  : hsl(0, 0%, 96%);
+    box-shadow   : 0 .3rem 5rem 0 hsla(96, 85%, 34%, 30%);
+}
