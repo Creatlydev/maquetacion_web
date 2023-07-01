@@ -45,6 +45,7 @@ body {
     align-items       : center;
     padding           : 0 .3rem;
     transition        : background-color 400ms;
+    cursor            : pointer;
 }
 
 .toggle__circle {
@@ -62,25 +63,27 @@ body {
     content           : '';
     position          : absolute;
     background-color  : var(--bg-toggle);
-    bottom            : 112%;
+    bottom            : 114%;
     transform-origin  : bottom left;
 }
 
 .toggle__circle::before {
-    width             : 25px;
-    height            : 25px;
-    left              : 32%;
-    border-radius     : 0% 100% 0% 100% / 0% 27% 73% 100% ;
-    transform         : translateX(-70%) rotate(-2deg);
+    width                      : 25px;
+    height                     : 25px;
+    left                       : 35%;
+    border-top-right-radius    : 100% 70% ;
+    border-bottom-left-radius  : 100%;
+    transform                  : translateX(-70%);
 }
 
 .toggle__circle::after {
-    width             : 30px;
-    height            : 30px;
-    left              : 35%;
-    border-radius     : 100% 0% 100% 0% / 100% 0% 100% 0% ;
-    transform         : rotate(-20deg);
-    border-left       : 5px solid var(--color-bg);
+    width                       : 30px;
+    height                      : 30px;
+    left                        : 38%;
+    border-top-left-radius      : 80%;
+    border-bottom-right-radius  : 80%;
+    border-left                 : 5px solid var(--color-bg);
+    transform                   : rotate(-10deg);
 }
 
 #checkbox:checked + .toggle > .toggle__circle {
