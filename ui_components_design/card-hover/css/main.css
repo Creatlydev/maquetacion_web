@@ -1,0 +1,211 @@
+/* FUENTE | MONTSERRAT
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* RESET
+--------- */
+* {
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    font            : inherit;
+    letter-spacing  : inherit;
+    line-height     : inherit;
+}
+
+/* CUSTOM PROPERTIES
+-------------------- */
+:root {
+    --color-primary  : hsl(103, 34%, 58%);
+    --color-bg       : hsl(210, 56%, 93%);
+}
+
+body {
+    font-family       : "Fira Sans", sans-serif;
+    letter-spacing    : 1.2px;
+    background-color  : var(--color-bg);
+    min-height        : 100vh;
+    display           : flex;
+    font-weight       : 400;
+}
+
+img {
+    width       : 100%;
+    object-fit  : cover;
+}
+
+.container {
+    margin  : auto;
+    width   : 360px;
+}
+
+/* TEXTS
+======================== */
+.text_weight_400 {
+    font-weight: 400;
+}
+
+.text_weight_500 {
+    font-weight: 500;
+}
+
+.text_weight_700 {
+    font-weight: 700;
+}
+
+.text_weight_800 {
+    font-weight: 800;
+}
+
+.text_size_sm {
+    font-size    : 0.75rem;  /* 14px */
+    line-height  : 1.25rem;   /* 20px */
+}
+
+.text_size_base {
+    font-size    : 1rem;    /* 16px */
+    line-height  : 1.5rem;  /* 24px */
+}
+
+.text_size_xxl {
+    font-size    : 1.5rem;  /* 24px */
+    line-height  : 2rem;    /* 32px */
+}
+
+
+
+
+/* CARD
+---------------- */
+.card {
+    width          : 100%;
+    max-width      : 360px;
+    height         : 500px;
+    overflow       : hidden;
+    border-radius  : .5rem;
+    position       : relative;
+    cursor         : pointer;
+}
+
+.card__content,
+.card__content-extra {
+    background-color  : var(--color-primary);
+    padding           : 3rem 2.875rem;
+    position          : absolute;
+    transition        : transform 300ms cubic-bezier(0.1, 0.72, 0.4, 0.97);
+    width             : 100%;
+    bottom            : 0;
+    left              : 0;
+}
+
+.card__content {
+    z-index              : 1;
+    padding-top          : 0;
+    padding-bottom       : 0;
+    transition-property  : transform, bottom, padding, background-color;
+    transition-delay     : 300ms;
+    transition-duration  : 300ms;
+}
+
+.card:hover > .card__content {
+    padding-top       : 3rem;
+    background-color  : #DEE8C2;
+    bottom            : 100%;
+    transform         : translateY(100%);
+    transition        : transform 300ms cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+
+.card__content::before, .card__content::after {
+    content           : "";
+    width             : 100%;
+    height            : 120px;
+    background-color  : inherit;
+    position          : absolute;
+    left              : 0;
+    z-index           : -1;
+}
+
+.card__content::before {
+    top                : -80px;
+    -webkit-clip-path  : ellipse(60% 80px at bottom center);
+            clip-path  : ellipse(60% 80px at bottom center);
+}
+
+.card__content::after {
+    bottom             : -80px;
+    -webkit-clip-path  : ellipse(60% 80px at top center);
+            clip-path  : ellipse(60% 80px at top center);
+}
+
+.card__content-extra {
+    height            : 50%;
+    position          : absolute;
+    display           : grid;
+    place-items       : center;
+    z-index           : 0;
+    color             : #dee8c2;
+    transform         : translateY(100%);
+}
+
+.card:has(.card__link:hover) > .card__content-extra {
+    transform   : translateY(0);
+    transition  : transform 0.35s;
+}
+
+.card__text_align_center {
+    text-align: center;
+}
+
+.card__title {
+    margin-bottom: 1.5rem;
+}
+
+.card__text_theme_green {
+    color: #2d7f0b;
+}
+
+.card__link {
+    display          : inline-flex;
+    gap              : .25rem;
+    align-items      : center;
+    text-decoration  : none;
+    padding          : .875rem 1rem;
+    color            : #2d7f0b;
+    opacity          : 0;
+    transition       : all 300ms;
+    transform        : translateY(20px);
+}
+
+.card__link-icon {
+    transition: transform 300ms;
+}
+
+.card__link:hover > .card__link-icon {
+    transform: translateX(5px);
+}
+
+.card:hover .card__link {
+    opacity     : 1;
+    transform   : translateY(0);
+    transition  : all 300ms 350ms cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+
+.icon_size_sm {
+    width   : 16px;
+    height  : 16px;
+}
+
+.card__content-img {
+    position    : absolute;
+    top         : 0;
+    left        : 0;
+    width       : 100%;
+    height      : 100%;
+    transform   : scale(1.2);
+    z-index     : -1;
+    transition  : transform 300ms;
+}
+
+.card:hover .card__content-img {
+    transform  : scale(1);
+}
