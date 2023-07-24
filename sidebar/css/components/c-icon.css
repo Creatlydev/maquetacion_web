@@ -1,0 +1,12 @@
+
+
+.c-icon {
+    width     : 24px;
+    height    : 24px;
+    padding   : .5rem;
+    box-sizing: content-box;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid red; */
+    flex-shrink: 0;
+}

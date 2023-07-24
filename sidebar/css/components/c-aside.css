@@ -1,0 +1,62 @@
+
+.c-aside {
+    --bg-aside: #1783DB;
+    --width: calc(24px + 2rem);
+    width: var(--width);
+    position: fixed;
+    height: 100vh;
+    background-color: var(--bg-aside);
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    transition: width 300ms, left 300ms;
+    overflow: hidden;
+    overflow-y: auto;
+
+    /*Ocultar scroll para IE, Edge y Firefox*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.c-aside__head {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--bg-aside);
+}
+
+.c-aside__title--highlight {
+    color: orange;
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.c-aside::-webkit-scrollbar{
+    display: none;
+}
+
+.c-aside__title {
+    display: flex;
+    align-items: center;
+}
+
+.c-aside__icon {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.js-scale-aside {
+    width: 250px;
+}
+
+
+@media screen and (max-width: 760px) {
+    .js-scale-aside {
+        width: var(--width);
+        left: -60px;
+    }
+}

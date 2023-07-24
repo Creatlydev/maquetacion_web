@@ -1,0 +1,12 @@
+
+.c-menu {
+    display: grid;
+    place-items: center;
+}
+
+.c-menu__icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #222;
+    padding-left: 1rem;
+}

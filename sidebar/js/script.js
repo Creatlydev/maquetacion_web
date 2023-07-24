@@ -1,12 +1,12 @@
 
 
-const ICON_MENU = document.getElementById('icon_menu');
-const ASIDE = document.getElementById('aside');
-const BODY = document.getElementById('body');
+const ICON_MENU = document.getElementById('js-menu');
+const ASIDE = document.getElementById('js-aside');
+const BODY = document.getElementById('js-body');
 
 ICON_MENU.addEventListener('click', () => {
-    ASIDE.classList.toggle('aside_move');
-    BODY.classList.toggle('body_move');
+    ASIDE.classList.toggle('js-scale-aside');
+    BODY.classList.toggle('js-translate-body');
 })
 
 
@@ -14,10 +14,10 @@ ICON_MENU.addEventListener('click', () => {
 // ESCUCHAR EL EVENTO RESIZE
 window.addEventListener('resize', () => {
     if (window.innerWidth < 760) {
-        ASIDE.classList.add('aside_move');
-        BODY.classList.add('body_move');
+        ASIDE.classList.add('js-scale-aside');
+        BODY.classList.add('js-translate-body');
     } else {
-        ASIDE.classList.remove('aside_move');
-        BODY.classList.remove('body_move');
+        ASIDE.classList.remove('js-scale-aside');
+        BODY.classList.remove('js-translate-body');
     }
 })

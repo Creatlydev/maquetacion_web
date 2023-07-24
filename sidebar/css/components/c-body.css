@@ -1,0 +1,15 @@
+
+
+
+
+
+.js-translate-body {
+    margin-left: 250px;
+}
+
+
+@media screen and (max-width: 760px) {
+    .js-translate-body {
+        margin-left: 0;
+    }
+}

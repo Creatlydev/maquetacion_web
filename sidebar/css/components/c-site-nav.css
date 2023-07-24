@@ -1,0 +1,35 @@
+
+.c-site-nav__item {
+    display: flex;
+    align-items: center;
+    color: #FFFFFFB2;
+    position: relative;
+    font-weight: 200;
+    transition: color 300ms;
+    padding: .115rem 0;
+}
+
+.c-site-nav__icon {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.c-site-nav__item--active {
+    color: #FFFFFF;
+    background-color: hsla(240, 100%, 80%, .3);
+}
+
+.c-site-nav__item--active::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 70%;
+    background-color: #FFFFFF;
+    top: 15%;
+    left: 0;
+}
+
+.c-site-nav__item:not(.c-site-nav__item--active):hover {
+    color: #FFFFFF;
+    background-color: #0000FF11;
+}
