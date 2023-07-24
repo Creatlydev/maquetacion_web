@@ -2,14 +2,16 @@
 .c-aside {
     --bg-aside: #1783DB;
     --width: calc(24px + 2rem);
-    width: var(--width);
+    width: 250px;
     position: fixed;
+    z-index: 10;
     height: 100vh;
     background-color: var(--bg-aside);
     top: 0;
     left: 0;
     color: #FFFFFF;
-    transition: width 300ms, left 300ms;
+    transform: translateX(-100%);
+    transition: width 300ms, left 300ms, transform 300ms;
     overflow: hidden;
     overflow-y: auto;
 
@@ -20,12 +22,12 @@
 
 .c-aside__head {
     height: 4rem;
-    display: flex;
+    display: flex; 
     align-items: center;
     font-weight: 700;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 12;
     background-color: var(--bg-aside);
 }
 
@@ -48,15 +50,18 @@
     padding-right: 1rem;
 }
 
-
 .js-scale-aside {
-    width: 250px;
+    transform: translateX(0);
 }
 
 
-@media screen and (max-width: 760px) {
-    .js-scale-aside {
+@media screen and (min-width: 760px) {
+    .c-aside {
         width: var(--width);
-        left: -60px;
+        transform: translate(0);
+    }
+
+    .js-scale-aside {
+        width: 250px;
     }
 }

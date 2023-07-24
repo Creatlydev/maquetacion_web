@@ -1,15 +1,16 @@
 
 
-
-
-
-.js-translate-body {
-    margin-left: 250px;
+.c-body {
+    transition: margin-left 300ms;
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 760px) {
+    .c-body {
+        margin-left: 56px;
+    }
+
     .js-translate-body {
-        margin-left: 0;
+        margin-left: 250px;
     }
 }

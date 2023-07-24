@@ -13,7 +13,7 @@ ICON_MENU.addEventListener('click', () => {
 
 // ESCUCHAR EL EVENTO RESIZE
 window.addEventListener('resize', () => {
-    if (window.innerWidth < 760) {
+    if (window.innerWidth > 760) {
         ASIDE.classList.add('js-scale-aside');
         BODY.classList.add('js-translate-body');
     } else {
@@ -21,3 +21,10 @@ window.addEventListener('resize', () => {
         BODY.classList.remove('js-translate-body');
     }
 })
+
+
+
+
+
+
+

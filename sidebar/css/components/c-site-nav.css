@@ -4,9 +4,8 @@
     align-items: center;
     color: #FFFFFFB2;
     position: relative;
-    font-weight: 200;
+    font-weight: 300;
     transition: color 300ms;
-    padding: .115rem 0;
 }
 
 .c-site-nav__icon {

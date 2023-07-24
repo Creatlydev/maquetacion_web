@@ -2,6 +2,7 @@
 .c-menu {
     display: grid;
     place-items: center;
+    margin-left: auto;
 }
 
 .c-menu__icon {
