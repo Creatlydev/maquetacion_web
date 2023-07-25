@@ -1,10 +1,10 @@
 
 .c-aside {
     --bg-aside: #1783DB;
-    --width: calc(24px + 2rem);
+    --width: 5rem;
+
     width: 250px;
     position: fixed;
-    z-index: 10;
     height: 100vh;
     background-color: var(--bg-aside);
     top: 0;
@@ -12,12 +12,8 @@
     color: #FFFFFF;
     transform: translateX(-100%);
     transition: width 300ms, left 300ms, transform 300ms;
-    overflow: hidden;
-    overflow-y: auto;
 
-    /*Ocultar scroll para IE, Edge y Firefox*/
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    padding: 0 .5rem;
 }
 
 .c-aside__head {
@@ -25,32 +21,40 @@
     display: flex; 
     align-items: center;
     font-weight: 700;
-    position: sticky;
-    top: 0;
-    z-index: 12;
+    position: relative;
     background-color: var(--bg-aside);
+    margin-bottom: 1.5rem;
 }
 
-.c-aside__title--highlight {
+.c-aside__text--highlight {
     color: orange;
 }
 
-/*Ocultar scroll para chrome, safari y opera*/
-.c-aside::-webkit-scrollbar{
-    display: none;
-}
-
-.c-aside__title {
+.c-aside__text {
     display: flex;
     align-items: center;
+    transition: opacity .3s;
 }
 
 .c-aside__icon {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  min-width: calc(var(--width) - 1rem);
+  color: orange;
 }
 
-.js-scale-aside {
+.c-aside__icon--collapse {
+    background-color: var(--bg-aside);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(calc(50% + .5rem), -50%) rotate(90deg);
+    transition: transform .5s;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.c-aside--visible {
     transform: translateX(0);
 }
 
@@ -59,9 +63,41 @@
     .c-aside {
         width: var(--width);
         transform: translate(0);
+        width: 80px;
     }
 
-    .js-scale-aside {
-        width: 250px;
+    .c-aside__text {
+        opacity: 0;
+    }
+
+    .c-aside__icon--collapse {
+        display: grid;
+    }
+
+    .c-menu__icon {
+        display: none;
+    }
+
+    .c-aside--expand .c-site-nav__text {
+        visibility: visible;
     }
 }
+
+
+
+.c-aside--expand {
+    width: 250px;
+}
+
+.c-aside--expand .c-tooltip {
+    display: none;
+}
+
+.c-aside--expand .c-aside__icon--collapse {
+    transform: translate(calc(50% + .5rem), -50%) rotate(-90deg);
+}
+
+.c-aside--expand .c-aside__text {
+    opacity: 1;
+}
+ 

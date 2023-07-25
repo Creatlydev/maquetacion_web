@@ -1,16 +1,43 @@
+.c-site-nav {
+    /* overflow: hidden;
+    overflow-y: auto; */
+    height: calc(100% - 5.5rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /*Ocultar scroll para IE, Edge y Firefox*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+/*Ocultar scroll para chrome, safari y opera*/
+.c-site-nav::-webkit-scrollbar{
+    display: none;
+}
+
+.c-site-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
 
 .c-site-nav__item {
     display: flex;
     align-items: center;
-    color: #FFFFFFB2;
+    color: hsla(0, 0%, 100%, 0.698);
     position: relative;
     font-weight: 300;
     transition: color 300ms;
+    border-radius: .25rem;
+    height: 50px;
 }
 
 .c-site-nav__icon {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    min-width: 4rem;
+    height: 100%;
 }
 
 .c-site-nav__item--active {
@@ -22,13 +49,28 @@
     content: '';
     position: absolute;
     width: 3px;
-    height: 70%;
+    height: 100%;
     background-color: #FFFFFF;
-    top: 15%;
+    top: 0;
     left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
 }
 
 .c-site-nav__item:not(.c-site-nav__item--active):hover {
     color: #FFFFFF;
-    background-color: #0000FF11;
+    background-color: hsla(240, 100%, 80%, 0.15);
+}
+
+.c-site-nav__item:hover .c-tooltip {
+    opacity: 1;
+    transform: translate(10px, -50%);
+}
+
+
+
+@media screen and (min-width: 760px) {
+    .c-site-nav__text {
+        visibility: hidden;
+    }
 }

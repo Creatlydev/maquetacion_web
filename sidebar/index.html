@@ -15,7 +15,6 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/base/base.css">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/aside.css">
     <link rel="stylesheet" href="./css/pages/home.css">
 </head>
@@ -31,35 +30,50 @@
 
     <aside class="c-aside" id="js-aside">
         <header class="c-aside__head">
-            <img src="./images/youtube.svg" alt="" class="c-aside__icon  c-icon">
-            <span class="c-aside__title">Design<span class="c-aside__title--highlight">By</span>Samir</span>
+            <i class="[ fa-solid  fa-chevron-up fa-rotate-90 ]  [ c-icon  c-icon--xs ]  c-aside__icon--collapse" id="js-icon-collape-aside">
+            </i>
+            <i class="[ fa-solid  fa-cubes-stacked ]  c-aside__icon  [ c-icon  c-icon--md ]"></i>
+            <span class="c-aside__text">Design<span class="c-aside__text--highlight">By</span>Samir</span>
         </header>
 
         <nav class="c-site-nav">
             <ul class="c-site-nav__list">
                 <a href="#" class="c-site-nav__item  c-site-nav__item--active" title="Home">
-                    <i class="fa-solid  fa-house  c-icon  c-site-nav__icon"></i>
+                    <i class="[ fa-solid  fa-house ]  c-icon  c-site-nav__icon"></i>
                     <span class="c-site-nav__text">Home</span>
+                    <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Home</span>
                 </a>
                 <a href="#" class="c-site-nav__item" title="Portfolio">
-                    <i class="fa-solid  fa-file  c-icon  c-site-nav__icon"></i>
+                    <i class="[ fa-solid  fa-file ]  c-icon  c-site-nav__icon"></i>
                     <span class="c-site-nav__text">Portfolio</span>
+                    <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Portfolio</span>
                 </a>
+                <a href="#" class="c-site-nav__item" title="Courses">
+                    <i class="[ fa-solid  fa-graduation-cap ]  c-icon  c-site-nav__icon"></i>
+                    <span class="c-site-nav__text">Courses</span>
+                    <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Courses</span>
+                </a>
+                <a href="#" class="c-site-nav__item" title="Blog">
+                    <i class="[ fa-brands  fa-hive ]  c-icon  c-site-nav__icon"></i>
+                    <span class="c-site-nav__text">Blog</span>
+                    <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Blog</span>
+                </a>
+                <a href="#" class="c-site-nav__item" title="Contact">
+                    <i class="[ fa-solid  fa-address-book  c-icon  c-site-nav__icon"></i>
+                    <span class="c-site-nav__text">Contact</span>
+                    <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Contact</span>
+                </a>
+                <a href="#" class="c-site-nav__item" title="About">
+                    <i class="[ fa-solid  fa-bolt ]  c-icon  c-site-nav__icon"></i>
+                    <span class="c-site-nav__text">About</span>
+                    <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">About</span>
+                </a>
+            </ul>
+            
+            <ul class="[ c-site-nav__list ]">
                 <a href="#" class="c-site-nav__item" title="Courses">
                     <i class="fa-solid  fa-graduation-cap  c-icon  c-site-nav__icon"></i>
                     <span class="c-site-nav__text">Courses</span>
-                </a>
-                <a href="#" class="c-site-nav__item" title="Blog">
-                    <i class="fa-brands  fa-hive  c-icon  c-site-nav__icon"></i>
-                    <span class="c-site-nav__text">Blog</span>
-                </a>
-                <a href="#" class="c-site-nav__item" title="Contact">
-                    <i class="fa-solid  fa-address-book  c-icon  c-site-nav__icon"></i>
-                    <span class="c-site-nav__text">Contact</span>
-                </a>
-                <a href="#" class="c-site-nav__item" title="About">
-                    <i class="fa-solid  fa-bolt  c-icon  c-site-nav__icon"></i>
-                    <span class="c-site-nav__text">About</span>
                 </a>
             </ul>
         </nav>

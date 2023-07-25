@@ -1,12 +1,17 @@
 
 
 .c-icon {
-    width     : 24px;
-    height    : 24px;
+    font-size: 1rem;
     padding   : .5rem;
-    box-sizing: content-box;
     display: grid;
     place-items: center;
-    /* border: 1px solid red; */
     flex-shrink: 0;
+}
+
+.c-icon--xs {
+    font-size: .75rem;
+}
+
+.c-icon--md {
+    font-size: 1.75rem;
 }
