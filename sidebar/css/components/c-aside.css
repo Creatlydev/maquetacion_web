@@ -1,6 +1,5 @@
 
 .c-aside {
-    --bg-aside: #1783DB;
     --width: 5rem;
 
     padding : 0 .5rem;
@@ -9,8 +8,8 @@
     height  : 100vh;
     top     : 0;
     left    : 0;
-    background-color: var(--bg-aside);
-    color           : #FFFFFF;
+    background-color: var(--primary-color-500);
+    color           : var(--neutral-100);
     transform : translateX(-100%);
     transition: width 300ms, left 300ms, transform 300ms;
 
@@ -23,11 +22,11 @@
     position     : relative;
     margin-bottom: 1.5rem;
     font-weight     : 700;
-    background-color: var(--bg-aside);
+    background-color: var(--primary-color-500);
 }
 
 .c-aside__text--highlight {
-    color: orange;
+    color: var(--accent-color);
 }
 
 .c-aside__text {
@@ -38,11 +37,11 @@
 
 .c-aside__icon {
   min-width: calc(var(--width) - 1rem);
-  color    : orange;
+  color: var(--accent-color);
 }
 
 .c-aside__icon--collapse {
-    background-color: var(--bg-aside);
+    background-color: var(--primary-color-500);
     border-radius: 50%;
     position: absolute;
     top: 50%;

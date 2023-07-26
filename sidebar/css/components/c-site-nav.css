@@ -23,8 +23,9 @@
 }
 
 .c-site-nav__item {
+    --primary-color-100: hsla(138, 100%, 94%, .1);
     font-weight  : 300;
-    color        : hsla(0, 0%, 100%, 0.698);
+    color        : hsla(0, 0%, 100%, 0.7);
     transition   : color 300ms;
     border-radius: .25rem;
     display    : flex;
@@ -40,7 +41,7 @@
 
 .c-site-nav__item--active {
     color           : #FFFFFF;
-    background-color: hsla(240, 100%, 80%, .3);
+    background-color: var(--primary-color-100);
 }
 
 .c-site-nav__item--active::before {
@@ -50,14 +51,14 @@
     height  : 100%;
     top     : 0;
     left    : 0;
-    background-color         : #FFFFFF;
+    background-color: #FFFFFF;
     border-top-left-radius   : .25rem;
     border-bottom-left-radius: .25rem;
 }
 
 .c-site-nav__item:not(.c-site-nav__item--active):hover {
     color           : #FFFFFF;
-    background-color: hsla(240, 100%, 80%, 0.15);
+    background-color: var(--primary-color-100);
 }
 
 .c-site-nav__item:hover .c-site-nav__tooltip {
