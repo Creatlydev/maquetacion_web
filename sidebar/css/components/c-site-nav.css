@@ -1,6 +1,4 @@
 .c-site-nav {
-    /* overflow: hidden;
-    overflow-y: auto; */
     height: calc(100% - 5.5rem);
 
     display: flex;
@@ -19,20 +17,20 @@
 }
 
 .c-site-nav__list {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    gap: .5rem;
+    gap           : .5rem;
 }
 
 .c-site-nav__item {
-    display: flex;
-    align-items: center;
-    color: hsla(0, 0%, 100%, 0.698);
-    position: relative;
-    font-weight: 300;
-    transition: color 300ms;
+    font-weight  : 300;
+    color        : hsla(0, 0%, 100%, 0.698);
+    transition   : color 300ms;
     border-radius: .25rem;
-    height: 50px;
+    display    : flex;
+    align-items: center;
+    height     : 50px;
+    position   : relative;
 }
 
 .c-site-nav__icon {
@@ -41,36 +39,28 @@
 }
 
 .c-site-nav__item--active {
-    color: #FFFFFF;
+    color           : #FFFFFF;
     background-color: hsla(240, 100%, 80%, .3);
 }
 
 .c-site-nav__item--active::before {
-    content: '';
+    content : '';
     position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: #FFFFFF;
-    top: 0;
-    left: 0;
-    border-top-left-radius: .25rem;
+    width   : 3px;
+    height  : 100%;
+    top     : 0;
+    left    : 0;
+    background-color         : #FFFFFF;
+    border-top-left-radius   : .25rem;
     border-bottom-left-radius: .25rem;
 }
 
 .c-site-nav__item:not(.c-site-nav__item--active):hover {
-    color: #FFFFFF;
+    color           : #FFFFFF;
     background-color: hsla(240, 100%, 80%, 0.15);
 }
 
-.c-site-nav__item:hover .c-tooltip {
+.c-site-nav__item:hover .c-site-nav__tooltip {
     opacity: 1;
     transform: translate(10px, -50%);
-}
-
-
-
-@media screen and (min-width: 760px) {
-    .c-site-nav__text {
-        visibility: hidden;
-    }
 }

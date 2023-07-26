@@ -9,21 +9,18 @@
     left    : 90%;
     transform: translate(0, -50%);
     background-color: var(--bg-color);
-    box-shadow: 0 0 15px 0 hsla(207, 81%, 55%, .8);
+    box-shadow: 0 0 15px 0 hsla(207, 81%, 55%, .5);
     color: white;
     z-index: 10;
     border-radius: .5rem;
     transition: transform .3s, opacity .3s;
     pointer-events: none;
     opacity: 0;
+    display: none;
 }
 
-.c-tooltip--visible {
-    transform: translate(15%, -50%);
-}
-
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 760px) {
     .c-tooltip {
-        display: none;
+        display: block;
     }
 }
