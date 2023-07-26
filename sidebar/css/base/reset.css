@@ -5,11 +5,31 @@
     color: inherit;
     outline: none;
     border: none;
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
 }
 
 a {
     text-decoration: none;
     display: inline-block;
+}
+
+input {
+    background-color: transparent;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 ul,
@@ -20,4 +40,5 @@ li {
 body {
     font-family: 'Poppins';
     font-size: 16px;
+    min-height: 100vh;
 }

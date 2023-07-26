@@ -8,6 +8,7 @@
     height  : 100vh;
     top     : 0;
     left    : 0;
+    z-index: 10;
     background-color: var(--primary-color-500);
     color           : var(--neutral-100);
     transform : translateX(-100%);
@@ -55,7 +56,7 @@
 
 .c-aside--visible {
     transform: translateX(0);
-}
+} 
 
 
 @media screen and (min-width: 760px) {
@@ -95,4 +96,3 @@
 .c-aside--expand .c-aside__text {
     opacity: 1;
 }
- 

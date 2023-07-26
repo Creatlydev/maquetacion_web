@@ -4,8 +4,10 @@
 @import url("./properties.css");
 @import url("../objects.css");
 @import url("../components/c-body.css");
+@import url("../components/c-text.css");
 @import url("../components/c-icon.css");
 @import url("../components/c-menu.css");
+@import url("../components/c-input.css");
 @import url("../components/c-tooltip.css");
 @import url("../components/c-page-head.css");
 @import url("../components/c-aside.css");

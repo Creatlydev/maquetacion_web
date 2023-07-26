@@ -2,6 +2,10 @@
 
 .o-container {
     width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.o-clearfix {
+    clear: both;
 }

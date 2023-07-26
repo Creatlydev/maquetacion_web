@@ -39,6 +39,14 @@
     height: 100%;
 }
 
+.c-site-nav__icon--switch {
+    font-size: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    background-color: var(--primary-color-500);
+}
+
 .c-site-nav__item--active {
     color           : #FFFFFF;
     background-color: var(--primary-color-100);
@@ -56,7 +64,7 @@
     border-bottom-left-radius: .25rem;
 }
 
-.c-site-nav__item:not(.c-site-nav__item--active):hover {
+.c-site-nav__item:not(.c-site-nav__item--active, .c-site-nav__item--switch):hover {
     color           : #FFFFFF;
     background-color: var(--primary-color-100);
 }

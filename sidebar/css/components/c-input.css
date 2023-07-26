@@ -1,0 +1,25 @@
+
+.c-input {
+    display: flex;
+    font-size    : 1rem;
+    font-weight: 300;
+    padding      : .5em 1em;
+    border-radius: .75em;
+    border-width : 1px;
+    border-style : solid;
+    width: 100%;
+}
+
+.c-input::placeholder {
+    color: var(--primary-color-500);
+}
+
+.c-input--primary {
+    color: var(--primary-color-500);
+    border-color: var(--primary-color-500);
+    background-color: hsl(138, 76%, 95%);
+}
+
+.c-input--primary:focus {
+    border-color: var(--primary-color-700);
+}

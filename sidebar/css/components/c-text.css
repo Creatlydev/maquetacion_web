@@ -1,0 +1,68 @@
+
+
+.c-text {
+    line-height: 1.5;
+    text-align : left;
+    color      : var(--neutral-300);
+    /* text-wrap: balance; */
+}
+
+.c-text--sm {
+    font-size : 0.75rem;
+    line-height: 1;
+}
+
+.c-text--md {
+    font-size: .875rem;
+}
+
+.c-text--lg {
+    font-size  : 1rem;
+    line-height: 1.3;
+}
+
+.c-text--xl {
+    font-size  : 1.25rem;
+    line-height: 1.3;
+}
+
+.c-text--2xl {
+    font-size  : 2rem;
+    line-height: 1;
+}
+
+.c-text--center {
+    text-align: center;
+}
+
+.c-text--nowrap {
+    white-space: nowrap;
+}
+
+.c-text--heading {
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .c-text--sm {
+        font-size: 0.875rem;
+    }
+
+    .c-text--md {
+        font-size: 1rem;
+    }
+
+    .c-text--lg {
+        font-size: 1.25rem;
+    }
+
+    .c-text--xl {
+        font-size: 1.5rem;
+    }
+
+    .c-text--2xl {
+        font-size: 2.5rem;
+    }
+}

@@ -1,13 +1,64 @@
-
 .c-menu {
-    display: grid;
-    place-items: center;
-    margin-left: auto;
+    --height-bar: 2.5px;
+    --gap       : 5px;
+    position: relative;
+    width   : 25px;
+    height  : calc((var(--height-bar) * 3) + calc(var(--gap) * 2));
+    flex-shrink: 0;
 }
 
 .c-menu__icon {
-    font-size: 1.5rem;
+    --pos-y-bar-one   : 0;
+    --pos-y-bar-three : 0;
+    --scale-bar       : 1;
+    --rotate-bar-one  : 0;
+    --rotate-bar-three: 0;
+    display       : flex;
+    flex-direction: column;
+    gap           : var(--gap);
+    position      : absolute;
+    width         : 100%;
     cursor: pointer;
-    color: #222;
-    padding-left: 1rem;
+    z-index: 15;
+}
+
+.c-menu__icon-bar {
+    position: relative;
+    height: var(--height-bar);
+    width: 100%;
+    border-radius: .5rem;
+    background-color: #222222;
+}
+
+.c-menu__icon-bar:nth-child(1) {
+    top: var(--pos-y-bar-one);
+    transform: rotate(var(--rotate-bar-one));
+    transition: top 200ms 100ms, transform 100ms;
+}
+
+.c-menu__icon-bar:nth-child(2) {
+    transform: scaleX(var(--scale-bar));
+    transition: transform 150ms 100ms;
+}
+
+.c-menu__icon-bar:nth-child(3) {
+    bottom: var(--pos-y-bar-three);
+    transform: rotate(var(--rotate-bar-three));
+    transition: bottom 200ms 100ms, transform 100ms;
+}
+
+.check-icon:checked+.c-menu__icon .c-menu__icon-bar:nth-child(1) {
+    transition: top 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked+.c-menu__icon .c-menu__icon-bar:nth-child(3) {
+    transition: bottom 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked+.c-menu__icon {
+    --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+    --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+    --scale-bar: 0;
+    --rotate-bar-one: 45deg;
+    --rotate-bar-three: -45deg;
 }
