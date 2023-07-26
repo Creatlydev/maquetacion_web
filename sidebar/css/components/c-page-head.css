@@ -4,6 +4,7 @@
 .c-page-head {
     width : 100%;
     height: 4rem;
+    padding: 1.5rem;
     background-color: var(--neutral-200);
 
     display    : flex;

@@ -20,6 +20,11 @@ a {
     display: inline-block;
 }
 
+span {
+    vertical-align: middle;
+    line-height: 1;
+}
+
 input {
     background-color: transparent;
     font: inherit;

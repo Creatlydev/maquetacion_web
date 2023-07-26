@@ -24,14 +24,15 @@
 
 .c-site-nav__item {
     --primary-color-100: hsla(138, 100%, 94%, .1);
-    font-weight  : 300;
-    color        : hsla(0, 0%, 100%, 0.7);
-    transition   : color 300ms;
-    border-radius: .25rem;
-    display    : flex;
-    align-items: center;
-    height     : 50px;
-    position   : relative;
+    font-weight        : 400;
+    font-size          : .875rem;
+    color              : hsla(0, 0%, 100%, 0.7);
+    transition         : color 300ms;
+    border-radius      : .25rem;
+    display            : flex;
+    align-items        : center;
+    height             : 50px;
+    position           : relative;
 }
 
 .c-site-nav__icon {
@@ -39,7 +40,7 @@
     height: 100%;
 }
 
-.c-site-nav__icon--switch {
+.c-site-nav__icon--absolute {
     font-size: 1.5rem;
     position: absolute;
     cursor: pointer;

@@ -47,8 +47,7 @@
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(calc(50% + .5rem), -50%) rotate(90deg);
-    transition: transform .5s;
+    transform: translate(calc(50% + .5rem), -50%);
     display: none;
     cursor: pointer;
     z-index: 1;
@@ -87,10 +86,6 @@
 
 .c-aside--expand .c-tooltip {
     display: none;
-}
-
-.c-aside--expand .c-aside__icon--collapse {
-    transform: translate(calc(50% + .5rem), -50%) rotate(-90deg);
 }
 
 .c-aside--expand .c-aside__text {

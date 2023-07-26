@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apuntes de css</title>
+    <title>Multimedia en css</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +15,12 @@
     <!-- CDN BOX-ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="./css/base/base.css">
-    <link rel="stylesheet" href="./css/pages/home.css">
+    <link rel="stylesheet" href="../css/base/base.css">
 </head>
 
 <body class="c-body  t-light" id="js-body">
 
-    <header class="c-page-head">
+    <header class="c-page-head  o-container">
         <div class="c-menu">
             <input type="checkbox" name="check-icon" id="check-icon" class="check-icon" hidden>
             <label for="check-icon" class="c-menu__icon" id="js-menu">
@@ -39,15 +38,14 @@
 
     <aside class="c-aside" id="js-aside">
         <header class="c-aside__head">
-            <i class='[ bx bx-expand-horizontal ]  [ c-icon  c-icon--xs ]  c-aside__icon--collapse'
-                id="js-icon-collape-aside"></i>
+            <i class='[ bx bx-expand-horizontal ]  [ c-icon  c-icon--xs ]  c-aside__icon--collapse' id="js-icon-collape-aside"></i>
             <i class='[ bx  bxl-css3 ]  c-aside__icon  [ c-icon  c-icon--md ]'></i>
             <span class="c-aside__text"><span class="c-aside__text--highlight">CSS</span>notes</span>
         </header>
 
         <nav class="c-site-nav">
             <ul class="c-site-nav__list">
-                <a href="/" class="c-site-nav__item  c-site-nav__item--active" title="Inicio">
+                <a href="/" class="c-site-nav__item" title="Inicio">
                     <i class='[ bx  bx-home ]  c-icon  c-site-nav__icon'></i>
                     <span class="c-site-nav__text  c-aside__text">Inicio</span>
                     <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Inicio</span>
@@ -57,7 +55,7 @@
                     <span class="c-site-nav__text  c-aside__text">Tipografias</span>
                     <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Tipografias</span>
                 </a>
-                <a href="/pages/multimedia.html" class="c-site-nav__item" title="Multimedia">
+                <a href="" class="c-site-nav__item  c-site-nav__item--active" title="Multimedia">
                     <i class='[ bx  bx-images ]  c-icon  c-site-nav__icon'></i>
                     <span class="c-site-nav__text  c-aside__text">Multimedia</span>
                     <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Multimedia</span>
@@ -65,9 +63,7 @@
                 <a href="#" class="c-site-nav__item" title="Propiedades">
                     <i class='[ bx  bx-list-plus ]  c-icon  c-site-nav__icon'></i>
                     <span class="c-site-nav__text  c-aside__text">Propiedades</span>
-                    <i class='[ bx  bx-chevron-down ]  c-icon  c-site-nav__icon  c-site-nav__icon--absolute'></i>
                     <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Propiedades</span>
-
                 </a>
                 <a href="/pages/fondos.html" class="c-site-nav__item" title="Fondos">
                     <i class='[ bx  bx-landscape ]  c-icon  c-site-nav__icon'></i>
@@ -85,8 +81,7 @@
                 <li class="[ c-site-nav__item  c-site-nav__item--switch ]" title="Dark">
                     <i class='[ bx  bx-moon ]  c-icon  c-site-nav__icon'></i>
                     <span class="c-site-nav__text  c-aside__text">Dark</span>
-                    <i class='[ bx  bx-toggle-left ]  c-icon  [ c-site-nav__icon  c-site-nav__icon--absolute ]'
-                        id="js-icon-switch"></i>
+                    <i class='[ bx  bx-toggle-left ]  c-icon  [ c-site-nav__icon  c-site-nav__icon--absolute ]' id="js-icon-switch"></i>
                 </li>
             </ul>
         </nav>
@@ -106,47 +101,7 @@
     </aside>
 
 
-    <main class="main">
-        <section class="section o-container">
-            <h1 class="[ c-text  c-text--xl  c-text--heading ]">
-                Desarrollo De Software
-            </h1>
-
-            <p class="c-text  c-text--md">
-                <img src="./images/persona-frente-computadora-traba.jpg" alt="" class="section__img">
-                El desarrollo de software es el proceso de diseño, codificación, prueba y mantenimiento de sistemas de
-                software. Implica el uso de varios lenguajes de programación, herramientas y metodologías para crear
-                aplicaciones de software que cumplan con los requisitos específicos del usuario. El desarrollo de
-                software puede ser un proceso complejo e iterativo que requiere la colaboración entre desarrolladores,
-                diseñadores y partes interesadas. Esto incluye analizar las necesidades del usuario, diseñar la
-                arquitectura del software, escribir código, depurar y probar el software y, finalmente, implementar y
-                mantener el producto terminado. A lo largo del proceso de desarrollo, los desarrolladores de software
-                utilizan una variedad de técnicas y mejores prácticas para garantizar que el software sea de alta
-                calidad, confiable y seguro. El campo del desarrollo de software está en constante evolución, con nuevas
-                tecnologías y metodologías que surgen todo el tiempo. Como resultado, los desarrolladores de software
-                deben mantenerse al día con las últimas tendencias y mejorar continuamente sus habilidades para entregar
-                proyectos de software exitosos.
-            </p>
-        </section>
-
-        <section class="section">
-            <div class="o-container">
-                <h2 class="c-text c-text-lg  c-text--heading">Fases</h2>
-                <p class="c-text">
-                    Los objetivos de desarrollo de software son las metas y objetivos específicos establecidos por un
-                    equipo u organización de desarrollo de software. Estos objetivos guían el proceso de desarrollo y
-                    ayudan a garantizar que el software que se está creando cumpla con los resultados deseados. Los
-                    objetivos pueden incluir cosas como mejorar la eficiencia o el rendimiento del software, mejorar la
-                    experiencia del usuario, agregar nuevas funciones o funcionalidades, solucionar errores o problemas,
-                    cumplir con los plazos del proyecto y mantenerse dentro de las restricciones presupuestarias. Al
-                    establecer objetivos claros y medibles, los equipos de desarrollo de software pueden mantenerse
-                    enfocados y alineados para lograr los resultados deseados.
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

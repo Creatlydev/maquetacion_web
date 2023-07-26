@@ -12,6 +12,12 @@ ICON_MENU.addEventListener('click', () => {
 ICON_COLLAPSE.addEventListener('click', () => {
     ASIDE.classList.toggle('c-aside--expand')
     BODY.classList.toggle('c-body--translate')
+
+    if (ICON_COLLAPSE.classList.contains('bx-expand-horizontal')) {
+        ICON_COLLAPSE.classList.replace('bx-expand-horizontal', 'bx-collapse-horizontal')
+    } else {
+        ICON_COLLAPSE.classList.replace('bx-collapse-horizontal', 'bx-expand-horizontal')
+    }
 })
 
 // ESCUCHAR EL EVENTO RESIZE
