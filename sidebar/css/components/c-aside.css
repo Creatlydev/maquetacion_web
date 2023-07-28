@@ -26,20 +26,17 @@
     background-color: var(--primary-color-500);
 }
 
-.c-aside__text--highlight {
+.c-aside__logo-text--highlight {
     color: var(--accent-color);
 }
 
 .c-aside__text {
-    display: flex;
-    align-items: center;
     transition: opacity .3s;
 }
 
-.c-aside__icon {
+.c-aside__logo-img {
   min-width: calc(var(--width) - 1rem);
-  color: var(--accent-color);
-}
+}   
 
 .c-aside__icon--collapse {
     background-color: var(--primary-color-500);

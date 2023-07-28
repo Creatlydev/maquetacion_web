@@ -27,7 +27,7 @@
     height: var(--height-bar);
     width: 100%;
     border-radius: .5rem;
-    background-color: #222222;
+    background-color: var(--primary-color-700);
 }
 
 .c-menu__icon-bar:nth-child(1) {
@@ -47,15 +47,15 @@
     transition: bottom 200ms 100ms, transform 100ms;
 }
 
-.check-icon:checked+.c-menu__icon .c-menu__icon-bar:nth-child(1) {
+.c-menu--is-open > .c-menu__icon > .c-menu__icon-bar:nth-child(1) {
     transition: top 200ms, transform 200ms 100ms;
 }
 
-.check-icon:checked+.c-menu__icon .c-menu__icon-bar:nth-child(3) {
+.c-menu--is-open > .c-menu__icon > .c-menu__icon-bar:nth-child(3) {
     transition: bottom 200ms, transform 200ms 100ms;
 }
 
-.check-icon:checked+.c-menu__icon {
+.c-menu--is-open > .c-menu__icon {
     --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
     --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
     --scale-bar: 0;

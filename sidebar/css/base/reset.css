@@ -34,16 +34,11 @@ input {
 img {
     max-width: 100%;
     object-fit: cover;
+    background-position: center center;
     display: block;
 }
 
 ul,
 li {
     list-style: none;
-}
-
-body {
-    font-family: 'Poppins';
-    font-size: 16px;
-    min-height: 100vh;
 }

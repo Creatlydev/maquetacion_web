@@ -1,0 +1,15 @@
+
+.c-logo {
+    display: flex;
+    align-items: center;
+}
+
+.c-logo__content-img {
+    display: grid;
+    place-items: center;
+}
+
+.c-logo__img {
+    width: 32px;
+    height: 32px;
+}

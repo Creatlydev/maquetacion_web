@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apuntes de css</title>
 
+    <link rel="shortcut icon" href="/icons/css.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- CDN BOX-ICONS -->
@@ -22,17 +24,14 @@
 <body class="c-body  t-light" id="js-body">
 
     <header class="c-page-head">
-        <div class="c-menu">
+        <div class="c-menu" id="js-menu-content">
             <input type="checkbox" name="check-icon" id="check-icon" class="check-icon" hidden>
             <label for="check-icon" class="c-menu__icon" id="js-menu">
                 <div class="c-menu__icon-bar"></div>
                 <div class="c-menu__icon-bar"></div>
                 <div class="c-menu__icon-bar"></div>
             </label>
-        </div>
-
-        <div>
-            <input type="email" placeholder="deja tu email" class="[ c-input  c-input--primary ]">
+            
         </div>
     </header>
 
@@ -41,8 +40,13 @@
         <header class="c-aside__head">
             <i class='[ bx bx-expand-horizontal ]  [ c-icon  c-icon--xs ]  c-aside__icon--collapse'
                 id="js-icon-collape-aside"></i>
-            <i class='[ bx  bxl-css3 ]  c-aside__icon  [ c-icon  c-icon--md ]'></i>
-            <span class="c-aside__text"><span class="c-aside__text--highlight">CSS</span>notes</span>
+            <div class="c-logo  c-aside__logo">
+                <div class="c-logo__content-img  c-aside__logo-img">
+                    <img src="/icons/css.png" alt="Imagen del logo" class="c-logo__img">
+                </div>
+                <span class="c-aside__text  c-logo__text"><span
+                        class="c-aside__logo-text--highlight">CSS</span>notes</span>
+            </div>
         </header>
 
         <nav class="c-site-nav">
@@ -65,7 +69,7 @@
                 <a href="#" class="c-site-nav__item" title="Propiedades">
                     <i class='[ bx  bx-list-plus ]  c-icon  c-site-nav__icon'></i>
                     <span class="c-site-nav__text  c-aside__text">Propiedades</span>
-                    <i class='[ bx  bx-chevron-down ]  c-icon  c-site-nav__icon  c-site-nav__icon--absolute'></i>
+                    <!-- <i class='[ bx  bx-chevron-down ]  c-icon  c-site-nav__icon  c-site-nav__icon--absolute'></i> -->
                     <span class="c-site-nav__tooltip  c-tooltip" id="js-tooltip">Propiedades</span>
 
                 </a>
@@ -107,13 +111,18 @@
 
 
     <main class="main">
+        <section class="section  cover">
+            <div class="o-container  cover-content">
+                <h1 class="[ c-text  c-text--xl  cover__heading ]">
+                    Desarrollo De Software
+                </h1>
+            </div>
+        </section>
+
         <section class="section o-container">
-            <h1 class="[ c-text  c-text--xl  c-text--heading ]">
-                Desarrollo De Software
-            </h1>
 
             <p class="c-text  c-text--md">
-                <img src="./images/persona-frente-computadora-traba.jpg" alt="" class="section__img">
+                <img src="./images/desarrollo-de-software.png" alt="" class="section__img">
                 El desarrollo de software es el proceso de diseño, codificación, prueba y mantenimiento de sistemas de
                 software. Implica el uso de varios lenguajes de programación, herramientas y metodologías para crear
                 aplicaciones de software que cumplan con los requisitos específicos del usuario. El desarrollo de
@@ -129,7 +138,7 @@
             </p>
         </section>
 
-        <section class="section">
+        <section class="section  section--highlight">
             <div class="o-container">
                 <h2 class="c-text c-text-lg  c-text--heading">Fases</h2>
                 <p class="c-text">

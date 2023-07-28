@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backgrounds en css</title>
 
+    <link rel="shortcut icon" href="/icons/css.png" type="image/x-icon">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- CDN BOX-ICONS -->
@@ -20,7 +23,7 @@
 
 <body class="c-body  t-light" id="js-body">
 
-    <header class="c-page-head  o-container">
+    <header class="c-page-head">
         <div class="c-menu">
             <input type="checkbox" name="check-icon" id="check-icon" class="check-icon" hidden>
             <label for="check-icon" class="c-menu__icon" id="js-menu">
@@ -31,16 +34,22 @@
         </div>
 
         <div>
-            <input type="email" placeholder="deja tu email" class="[ c-input  c-input--primary ]">
+
         </div>
     </header>
 
 
     <aside class="c-aside" id="js-aside">
         <header class="c-aside__head">
-            <i class='[ bx bx-expand-horizontal ]  [ c-icon  c-icon--xs ]  c-aside__icon--collapse' id="js-icon-collape-aside"></i>
-            <i class='[ bx  bxl-css3 ]  c-aside__icon  [ c-icon  c-icon--md ]'></i>
-            <span class="c-aside__text"><span class="c-aside__text--highlight">CSS</span>notes</span>
+            <i class='[ bx bx-expand-horizontal ]  [ c-icon  c-icon--xs ]  c-aside__icon--collapse'
+                id="js-icon-collape-aside"></i>
+            <div class="c-logo  c-aside__logo">
+                <div class="c-logo__content-img  c-aside__logo-img">
+                    <img src="/icons/css.png" alt="Imagen del logo" class="c-logo__img">
+                </div>
+                <span class="c-aside__text  c-logo__text"><span
+                        class="c-aside__logo-text--highlight">CSS</span>notes</span>
+            </div>
         </header>
 
         <nav class="c-site-nav">
@@ -81,7 +90,8 @@
                 <li class="[ c-site-nav__item  c-site-nav__item--switch ]" title="Dark">
                     <i class='[ bx  bx-moon ]  c-icon  c-site-nav__icon'></i>
                     <span class="c-site-nav__text  c-aside__text">Dark</span>
-                    <i class='[ bx  bx-toggle-left ]  c-icon  [ c-site-nav__icon  c-site-nav__icon--absolute ]' id="js-icon-switch"></i>
+                    <i class='[ bx  bx-toggle-left ]  c-icon  [ c-site-nav__icon  c-site-nav__icon--absolute ]'
+                        id="js-icon-switch"></i>
                 </li>
             </ul>
         </nav>
